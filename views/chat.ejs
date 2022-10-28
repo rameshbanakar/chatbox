@@ -79,12 +79,12 @@
                     <i class="fa-solid fa-users">Group Chat</i>
 
                   </a>
-                  <button onclick="clearChat()">Clear Chat</button>
+                  <button onclick="clearChat()" class="btn btn-warning">Clear Chat</button>
               </div>
         </nav>
           <div id="message-conatiner">
           <input id="message" class="fixAtBottom form-control" />
-          <button onclick="sendMessage()" class="fixAtBottomSend  btn-primary">send</button>
+          <button onclick="sendMessage()" class=" btn-primary fixAtBottomSend  ">send</button>
           </div>
         `
         document.body.innerHTML=htmlContent
