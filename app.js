@@ -36,7 +36,7 @@ io.on("connection", (socket) => {
     io.sockets.emit("newMsg", data);
   });
   socket.on("clearChat",()=>{
-    client.db().collection("chat").drop()
+    client.db().collection("chat").drop().catch(()=>{console.log("data alredy clear")})
   })
   socket.on("getdata",() => {
      client
